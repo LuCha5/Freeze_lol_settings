@@ -2,8 +2,8 @@ import os
 import tkinter as tk
 
 # Chemins des fichiers à modifier
-file_path1 = "chemin/du/premier/fichier.txt"
-file_path2 = "chemin/du/deuxieme/fichier.txt"
+file_path1 = "C:\Riot Games\League of Legends\Config\game.cfg"
+file_path2 = "C:\Riot Games\League of Legends\Config\PersistedSettings.json"
 
 def set_read_only():
     global file_path1, file_path2
@@ -23,13 +23,13 @@ def remove_read_only():
 
 # Création de la fenêtre principale
 root = tk.Tk()
-root.title("Modifier les permissions de fichiers")
+root.title("Freeze LOL settings")
 
 # Boutons pour modifier les permissions
-set_readonly_button = tk.Button(root, text="Mettre en lecture seule", command=set_read_only)
+set_readonly_button = tk.Button(root, text="Freeze settings", command=set_read_only)
 set_readonly_button.pack(pady=10)
 
-remove_readonly_button = tk.Button(root, text="Enlever lecture seule", command=remove_read_only)
+remove_readonly_button = tk.Button(root, text="Unfreeze settings", command=remove_read_only)
 remove_readonly_button.pack(pady=10)
 
 # Label pour afficher le statut
