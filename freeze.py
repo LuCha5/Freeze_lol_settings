@@ -2,8 +2,8 @@ import os
 import tkinter as tk
 
 # Chemins des fichiers à modifier
-file_path1 = "C:\Riot Games\League of Legends\Config\game.cfg"
-file_path2 = "C:\Riot Games\League of Legends\Config\PersistedSettings.json"
+file_path1 = "C:\\Riot Games\\League of Legends\\Config\\game.cfg"
+file_path2 = "C:\\Riot Games\\League of Legends\\Config\\PersistedSettings.json"
 
 def set_read_only():
     global file_path1, file_path2

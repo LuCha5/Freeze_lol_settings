@@ -9,3 +9,9 @@ For get Tkinter you should use
 ```
 sudo apt-get install python3-tk
 ```
+
+for using it after installing Tkinter
+
+```
+python3 freeze.py
+```
