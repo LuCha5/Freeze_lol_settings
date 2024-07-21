@@ -11,7 +11,7 @@ def set_read_only():
     os.chmod(file_path1, 0o444)  # Mettre en lecture seule le premier fichier
     os.chmod(file_path2, 0o444)  # Mettre en lecture seule le deuxième fichier
 
-    status_label.config(text=f"Les fichiers sont maintenant en lecture seule.")
+    status_label.config(text=f"Files are now on read-only mode.")
 
 def remove_read_only():
     global file_path1, file_path2
@@ -19,7 +19,7 @@ def remove_read_only():
     os.chmod(file_path1, 0o666)  # Enlever lecture seule du premier fichier
     os.chmod(file_path2, 0o666)  # Enlever lecture seule du deuxième fichier
 
-    status_label.config(text=f"Les fichiers sont maintenant modifiables.")
+    status_label.config(text=f"Files are now editable.")
 
 # Création de la fenêtre principale
 root = tk.Tk()
